@@ -6,23 +6,11 @@ window.addEventListener("scroll", () => {
     nav2.classList.remove("nav2__black");
   }
 });
-
-// const hamburger = document.getElementById("hamburger");
-// const navLinks = document.getElementById("nav-links");
-
-// hamburger.addEventListener("click", () => {
-//   navLinks.classList.toggle("active");
-// });
 const hamburger = document.getElementById("hamburger");
-if (hamburger) {
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-  });
-}
 const navLinks = document.getElementById("nav-links");
-if (navLinks) {
-  navLinks.addEventListener("click", () => {
-    console.log("clicked");
+
+if (hamburger && navLinks) {
+  hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
   });
 }
@@ -62,48 +50,46 @@ async function getMovieDetails() {
   });
 }
 
-const moviePoster = 
-document.getElementById("movie-poster");
+const moviePoster = document.getElementById("movie-poster");
 if (moviePoster) {
   getMovieDetails();
 
   moviePoster.addEventListener();
 
-document.querySelector(".like-btn").addEventListener("click", () => {
-  alert("Added to the liked videos");
-});
+  document.querySelector(".like-btn").addEventListener("click", () => {
+    alert("Added to the liked videos");
+  });
 
-document.querySelector(".play-btn").addEventListener("click", () => {
-  alert("movie play feature");
-});
-document.querySelector(".trailer-btn").addEventListener("click", () => {
-  (window, open(`https://youtu.be/Di310WS8zLk?si=u37LukBSTFshJor1`));
-});
+  document.querySelector(".play-btn").addEventListener("click", () => {
+    alert("movie play feature");
+  });
+  document.querySelector(".trailer-btn").addEventListener("click", () => {
+    (window, open(`https://youtu.be/Di310WS8zLk?si=u37LukBSTFshJor1`));
+  });
 
-document.querySelector(".list-btn").addEventListener("click", () => {
-  alert("Added to my list");
-});
-document.querySelector(".share-btn").addEventListener("click", async () => {
-  if (navigator.share) {
-    await navigator.share({
-      title: movie.name,
-      text: movie.overview,
-      url: window.location.href,
-    });
-  } else {
-    alert("sharing is not supported in this browser");
-  }
-});
+  document.querySelector(".list-btn").addEventListener("click", () => {
+    alert("Added to my list");
+  });
+  document.querySelector(".share-btn").addEventListener("click", async () => {
+    if (navigator.share) {
+      await navigator.share({
+        title: movie.name,
+        text: movie.overview,
+        url: window.location.href,
+      });
+    } else {
+      alert("sharing is not supported in this browser");
+    }
+  });
 }
 
 const banners = document.querySelectorAll(".banner");
 console.log(banners.length);
 let current = 0;
-setInterval (() => {
-  
+setInterval(() => {
   banners[current].classList.remove("active");
   current++;
-  if (current >= banners.length){
+  if (current >= banners.length) {
     current = 0;
   }
   banners[current].classList.add("active");
