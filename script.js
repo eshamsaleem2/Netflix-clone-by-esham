@@ -1,5 +1,3 @@
-
-
 const nav2 = document.getElementById("nav2");
 window.addEventListener("scroll", () => {
   if (window.scrollY >= 100) {
@@ -9,16 +7,28 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// const hamburger = document.getElementById("hamburger");
+// const navLinks = document.getElementById("nav-links");
+
+// hamburger.addEventListener("click", () => {
+//   navLinks.classList.toggle("active");
+// });
 const hamburger = document.getElementById("hamburger");
+if (hamburger) {
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+  });
+}
 const navLinks = document.getElementById("nav-links");
-
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
-
+if (navLinks) {
+  navLinks.addEventListener("click", () => {
+    console.log("clicked");
+    navLinks.classList.toggle("active");
+  });
+}
 
 function openMovie() {
-  window.location.href = `movie.html? id=${101}`;
+  window.location.href = `movie.html? id=${119051}`;
 }
 
 const params = new URLSearchParams(window.location.search);
@@ -39,51 +49,62 @@ async function getMovieDetails() {
   document.getElementById("overview").innerText = movie.overview;
 
   document.getElementById("rating").innerText =
-`⭐ ${movie.vote_average.toFixed(1)}/10`;
+    `⭐ ${movie.vote_average.toFixed(1)}/10`;
 
-document.getElementById("release-date").innerText =
-`Released: ${movie.first_air_date}`;
+  document.getElementById("release-date").innerText =
+    `Released: ${movie.first_air_date}`;
 
-const genresContainer = document.getElementById("genres");
-movie.genres.forEach((genre) => {
-  const span = document.createElement("span");
-  span.innerText = genre.name;
-  genresContainer.appendChild(span);
-});
+  const genresContainer = document.getElementById("genres");
+  movie.genres.forEach((genre) => {
+    const span = document.createElement("span");
+    span.innerText = genre.name;
+    genresContainer.appendChild(span);
+  });
 }
-getMovieDetails();
 
+const moviePoster = 
+document.getElementById("movie-poster");
+if (moviePoster) {
+  getMovieDetails();
 
-document.getElementById("movie-poster").addEventListener("click", () =>{
-  window.open(
-    "https://youtu.be/Di310WS8zLk?si=u37LukBSTFshJor1"
-  );
-});
-document.querySelector(".like-btn").addEventListener("click", () =>{
+  moviePoster.addEventListener();
+
+document.querySelector(".like-btn").addEventListener("click", () => {
   alert("Added to the liked videos");
-})
+});
 
-document.querySelector(".play-btn").addEventListener("click",() =>{
+document.querySelector(".play-btn").addEventListener("click", () => {
   alert("movie play feature");
 });
-document.querySelector(".trailer-btn").addEventListener("click" ,() =>{
-window,open(`https://youtu.be/Di310WS8zLk?si=u37LukBSTFshJor1`);
+document.querySelector(".trailer-btn").addEventListener("click", () => {
+  (window, open(`https://youtu.be/Di310WS8zLk?si=u37LukBSTFshJor1`));
 });
 
-document.querySelector(".list-btn").addEventListener("click", () =>{
+document.querySelector(".list-btn").addEventListener("click", () => {
   alert("Added to my list");
 });
-document.querySelector(".share-btn").addEventListener("click", async ()=>
-   {
- if (navigator.share){
-  await navigator.share({
-    title: movie.name, 
-    text: movie.overview,
-    url: window.location.href
-  });
-} else {
-  alert("sharing is not supported in this browser");
-}
+document.querySelector(".share-btn").addEventListener("click", async () => {
+  if (navigator.share) {
+    await navigator.share({
+      title: movie.name,
+      text: movie.overview,
+      url: window.location.href,
+    });
+  } else {
+    alert("sharing is not supported in this browser");
+  }
 });
+}
 
-
+const banners = document.querySelectorAll(".banner");
+console.log(banners.length);
+let current = 0;
+setInterval (() => {
+  
+  banners[current].classList.remove("active");
+  current++;
+  if (current >= banners.length){
+    current = 0;
+  }
+  banners[current].classList.add("active");
+}, 4000);

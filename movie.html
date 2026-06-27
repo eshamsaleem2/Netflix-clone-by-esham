@@ -1,39 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="movie.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="movie.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <title>Movie details</title>
-    
-</head>
-<body>
-  <div class="movie-details">
-    <img id="movie-poster" alt="Movie Poster">
-    <div class="movie-info">
-  <h1 id="title">Wednesday</h1>  
-  <p id="overview">Wednesday is a highly popular, dark-comedy mystery television series created for Netflix. It follows the iconic, emotionless Wednesday Addams as she navigates her teenage years, attempts to master her emerging psychic abilities, and solves a monstrous killing spree at her exclusive boarding school</p>
-    
-    <div class="movie-buttons">
-      <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
-      <button class="play-btn"><i class="fas fa-play"></i></button>
-      <button class="trailer-btn"><i class="fas fa-film"></i></button>
-      <button class="list-btn"><i class="fas fa-plus"></i></button>
-      <button class="share-btn"><i class="fas fa-share"></i></button>
+  </head>
+  <body>
+    <div class="movie-details">
+      <img id="movie-poster" alt="Movie Poster" />
+      <div class="movie-info">
+        <h1 id="title">Wednesday</h1>
+        <p id="overview">
+          Wednesday is a highly popular, dark-comedy mystery television series
+          created for Netflix. It follows the iconic, emotionless Wednesday
+          Addams as she navigates her teenage years, attempts to master her
+          emerging psychic abilities, and solves a monstrous killing spree at
+          her exclusive boarding school
+        </p>
+
+        <div class="movie-buttons">
+          <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
+          <button class="play-btn"><i class="fas fa-play"></i></button>
+          <button class="trailer-btn"><i class="fas fa-film"></i></button>
+          <button class="list-btn"><i class="fas fa-plus"></i></button>
+          <button class="share-btn"><i class="fas fa-share"></i></button>
+        </div>
+        <div class="rate">
+          <p id="rating"></p>
+          <p id="release-date"></p>
+          <div id="genres"></div>
+        </div>
+        <div class="search-container">
+          <input type="text" id="search" placeholder="search movies..." />
+        </div>
+      </div>
     </div>
-    <p id="rating"></p>
-    <p id="release-date"></p>
-    <div id="genres"></div>
-<div class="search-container">
-      <input
-    type="text"
-    id="search"
-    placeholder="search movies..."
-    >
-</div>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

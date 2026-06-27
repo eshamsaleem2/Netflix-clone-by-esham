@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <title>Netflix Clone</title>
   </head>
   <body>
     <!-- Logo -->
     <div class="nav" id="nav2">
-       <div class="nav-user">
+      <div class="nav-user">
         <img src="user-img.jpeg" alt="" class="nav-user" />
       </div>
       <img src="netflix-logo.png" alt="" class="nav-logo" />
@@ -27,27 +30,60 @@
         <li><i class="fa-solid fa-star"></i>originals</li>
         <li><i class="fa-solid fa-list"></i>Watch History</li>
       </ul>
-  
-      
     </div>
     <!-- header -->
-
-    <div class="banner">
-      <div class="banner-content">
-        <h1 class="banner-title">Wedneday</h1>
-        <div class="banner-buttons"></div>
-        <button class="banner-button">Play</button>
-        <button class="banner-button">My List</button>
-        <div class="banner-description">
-          Wednesday is a hit Netflix fantasy-comedy series that follows the
-          morbid, clever, and deadpan Wednesday Addams as she navigates
-          Nevermore Academy. Tasked with mastering her emerging psychic
-          abilities, solving a supernatural murder mystery, and surviving high
-          school drama, she balances her unique coming-of-age journey with dark,
-          comedic flair
+    <div class="banner-slider">
+      <div class="banner banner1 active">
+        <div class="banner-content">
+          <h1 class="banner-title">Wedneday</h1>
+          <div class="banner-buttons"></div>
+          <button class="banner-button">Play</button>
+          <button class="banner-button">My List</button>
+          <div class="banner-description">
+            Wednesday is a hit Netflix fantasy-comedy series that follows the
+            morbid, clever, and deadpan Wednesday Addams as she navigates
+            Nevermore Academy. Tasked with mastering her emerging psychic
+            abilities, solving a supernatural murder mystery, and surviving high
+            school drama, she balances her unique coming-of-age journey with
+            dark, comedic flair
+          </div>
         </div>
+        <div class="banner-fade"></div>
       </div>
-      <div class="banner-fade"></div>
+      <!-- second banner -->
+      <div class="banner banner2">
+        <div class="banner-content">
+          <h1 class="banner-title">Squid Game</h1>
+          <div class="banner-buttons"></div>
+          <button class="banner-button">Play</button>
+          <button class="banner-button">My List</button>
+          <div class="banner-description">
+            Squid Game is a South Korean dystopian survival thriller on Netflix
+            created by Hwang Dong-hyuk. The series follows 456 financially
+            desperate contestants who risk their lives competing in deadly,
+            high-stakes children’s games—such as Red Light, Green Light—for a
+            life-changing grand prize of \₩45.6 billion
+          </div>
+        </div>
+        <div class="banner-fade"></div>
+      </div>
+      <!-- third banner -->
+      <div class="banner banner3">
+        <div class="banner-content">
+          <h1 class="banner-title">Money Heist</h1>
+          <div class="banner-buttons"></div>
+          <button class="banner-button">Play</button>
+          <button class="banner-button">My List</button>
+          <div class="banner-description">
+            Money Heist (original Spanish title: La Casa de Papel) is a crime
+            thriller series about a mysterious criminal mastermind known as "The
+            Professor". He recruits a team of eight code-named thieves who wear
+            distinctive red jumpsuits and Salvador Dalí masks to carry out
+            elaborate, multi-day heists against the Spanish government
+          </div>
+        </div>
+        <div class="banner-fade"></div>
+      </div>
     </div>
     <!-- <bodynetflix originals -->
     <div class="row">
@@ -112,7 +148,13 @@
     <div class="row">
       <h2>TRENDING NOW</h2>
       <div class="rowposters">
-        <img src="small-img1.jpeg" alt="" class="rowposter row-posters"  id="wednesday" onclick="openMovie(101)"/>
+        <img
+          src="small-img1.jpeg"
+          alt=""
+          class="rowposter row-posters"
+          id="wednesday"
+          onclick="openMovie(101)"
+        />
         <img src="small-img2.jpeg" alt="" class="rowposter row-posters" />
         <img src="small-img3.jpeg" alt="" class="rowposter row-posters" />
         <img src="small-img4.jpeg" alt="" class="rowposter row-posters" />
@@ -154,7 +196,7 @@
       </div>
     </div>
 
-      <!-- Season2 -->
+    <!-- Season2 -->
     <div class="row">
       <h2>SEASON 2</h2>
       <div class="rowposters">
