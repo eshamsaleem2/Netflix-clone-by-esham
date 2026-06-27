@@ -54,7 +54,7 @@ const moviePoster = document.getElementById("movie-poster");
 if (moviePoster) {
   getMovieDetails();
 
-  moviePoster.addEventListener();
+  
 
   document.querySelector(".like-btn").addEventListener("click", () => {
     alert("Added to the liked videos");
