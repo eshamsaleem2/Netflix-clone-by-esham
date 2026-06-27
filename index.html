@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Netflix Clone</title>
+  </head>
+  <body>
+    <!-- Logo -->
+    <div class="nav" id="nav2">
+       <div class="nav-user">
+        <img src="user-img.jpeg" alt="" class="nav-user" />
+      </div>
+      <img src="netflix-logo.png" alt="" class="nav-logo" />
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><i class="fa-solid fa-house"></i>Home</li>
+        <li><i class="fa-solid fa-tv"></i>TV Shows</li>
+        <li><i class="fa-solid fa-video"></i>Movies</li>
+        <li><i class="fa-solid fa-heart"></i>My List</li>
+        <li><i class="fa-solid fa-star"></i>originals</li>
+        <li><i class="fa-solid fa-list"></i>Watch History</li>
+      </ul>
+  
+      
+    </div>
+    <!-- header -->
+
+    <div class="banner">
+      <div class="banner-content">
+        <h1 class="banner-title">Wedneday</h1>
+        <div class="banner-buttons"></div>
+        <button class="banner-button">Play</button>
+        <button class="banner-button">My List</button>
+        <div class="banner-description">
+          Wednesday is a hit Netflix fantasy-comedy series that follows the
+          morbid, clever, and deadpan Wednesday Addams as she navigates
+          Nevermore Academy. Tasked with mastering her emerging psychic
+          abilities, solving a supernatural murder mystery, and surviving high
+          school drama, she balances her unique coming-of-age journey with dark,
+          comedic flair
+        </div>
+      </div>
+      <div class="banner-fade"></div>
+    </div>
+    <!-- <bodynetflix originals -->
+    <div class="row">
+      <h2>NETFLIX ORIGINALS</h2>
+      <div class="rowposters">
+        <img src="luis-img.jpeg" alt="" class="rowposter row-posters-large" />
+        <img src="cobra-img.jpeg" alt="" class="rowposter row-posters-large" />
+        <img
+          src="small-img17.jpeg"
+          alt=""
+          class="rowposter row-posters-large"
+        />
+        <img src="robot-img.jpeg" alt="" class="rowposter row-posters-large" />
+        <img src="Pulse.jpeg" alt="" class="rowposter row-posters-large" />
+        <img
+          src="small-img18.jpeg"
+          alt=""
+          class="rowposter row-posters-large"
+        />
+        <img
+          src="small-img19.jpeg"
+          alt=""
+          class="rowposter row-posters-large"
+        />
+        <img
+          src="haunted-img.jpeg"
+          alt=""
+          class="rowposter row-posters-large"
+        />
+        <img src="luis-img.jpeg" alt="" class="rowposter row-posters-large" />
+        <img
+          src="small-img17.jpeg"
+          alt=""
+          class="rowposter row-posters-large"
+        />
+        <img src="cobra-img.jpeg" alt="" class="rowposter row-posters-large" />
+        <img src="robot-img.jpeg" alt="" class="rowposter row-posters-large" />
+        <img
+          src="small-img18.jpeg"
+          alt=""
+          class="rowposter row-posters-large"
+        />
+        <img
+          src="small-img19.jpeg"
+          alt=""
+          class="rowposter row-posters-large"
+        />
+        <img
+          src="umbrella-img.jpeg"
+          alt=""
+          class="rowposter row-posters-large"
+        />
+        <img
+          src="haunted-img.jpeg"
+          alt=""
+          class="rowposter row-posters-large"
+        />
+      </div>
+    </div>
+
+    <!-- trending now -->
+    <div class="row">
+      <h2>TRENDING NOW</h2>
+      <div class="rowposters">
+        <img src="small-img1.jpeg" alt="" class="rowposter row-posters"  id="wednesday" onclick="openMovie(101)"/>
+        <img src="small-img2.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img3.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img4.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img5.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img6.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img7.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img8.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img1.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img2.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img3.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img4.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img5.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img6.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img7.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img8.jpeg" alt="" class="rowposter row-posters" />
+      </div>
+    </div>
+
+    <!-- top rated -->
+    <div class="row">
+      <h2>TOP RATED</h2>
+      <div class="rowposters">
+        <img src="small-img9.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img10.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img11.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img12.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img13.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img14.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img15.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img16.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img9.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img10.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img11.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img12.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img13.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img14.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img15.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img16.jpeg" alt="" class="rowposter row-posters" />
+      </div>
+    </div>
+
+      <!-- Season2 -->
+    <div class="row">
+      <h2>SEASON 2</h2>
+      <div class="rowposters">
+        <img src="small-img13.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img14.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img15.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img9.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img10.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img11.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img12.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img16.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img9.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img10.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img11.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img12.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img13.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img14.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img15.jpeg" alt="" class="rowposter row-posters" />
+        <img src="small-img16.jpeg" alt="" class="rowposter row-posters" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

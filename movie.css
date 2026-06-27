@@ -1,0 +1,93 @@
+body{
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.movie-details{
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+#movie-poster{
+    width: 300px;
+    border-radius: 10px;
+}
+.movie-info{
+    flex: 1;
+}
+#title{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #e50914;
+}
+#overview{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+/* like share icons */
+.movie-buttons{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.movie-buttons button{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.play-btn{
+    background: #e50914;
+    color: white;
+}
+.trailer-btn{
+    background: #333;
+    color: white;
+}
+.list-btn{
+    background: #444;
+    color: white;
+}
+.share-btn{
+    background: #555;
+    color: white;
+}
+.like-btn{
+    background-color: #333;
+    color: white;
+}
+
+/* search container */
+.search-container{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+#search{
+    width: 250px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+}
+
+/* mobile responsive */
+@media(max-width:768px){
+    .movie-details{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #movie-poster{
+        width: 250px;
+    }
+    #title{
+        font-size: 2rem;
+    }
+}
